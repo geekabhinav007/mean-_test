@@ -7,3 +7,6 @@ temp/
 # ignore Node Module
 
 node_modules/
+
+# Added package lock json file
+package-lock.json
