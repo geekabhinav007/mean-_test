@@ -11,7 +11,7 @@
             <div class="form-group">
               <label for="inputName">Name</label>
               <input class="form-control" type="text" formControlName="name">
-              <div class="invalid-feedback" *ngIf="submitted && myForm.name.errors?.required">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['name'].errors?.['required']">
                 Name is required.
               </div>
             </div>
@@ -19,10 +19,10 @@
               <label for="inputEmail3">Email</label>
               <input class="form-control" type="text" formControlName="email">
               <!-- error -->
-              <div class="invalid-feedback" *ngIf="submitted && myForm.email.errors?.required">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['email'].errors?.['required']">
                 Enter your email.
               </div>
-              <div class="invalid-feedback" *ngIf="submitted && myForm.email.errors?.pattern">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['email'].errors?.['pattern']">
                 Enter valid email.
               </div>
             </div>
@@ -36,7 +36,7 @@
                 </option>
               </select>
               <!-- error -->
-              <div class="invalid-feedback" *ngIf="submitted && myForm.designation.errors?.required">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['designation'].errors?.['required']">
                 Choose designation.
               </div>
             </div>
@@ -45,10 +45,10 @@
               <label for="inputVerify3">Mobile No</label>
               <input class="form-control" type="text" formControlName="phoneNumber">
               <!-- error -->
-              <div class="invalid-feedback" *ngIf="submitted && myForm.phoneNumber.errors?.required">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['phoneNumber'].errors?.['required']">
                 Enter your phone number.
               </div>
-              <div class="invalid-feedback" *ngIf="submitted && myForm.phoneNumber.errors?.pattern">
+              <div class="invalid-feedback" *ngIf="submitted && myForm.errors?.['phoneNumber'].errors?.['pattern']">
                 Enter Numbers Only
               </div>
             </div>
