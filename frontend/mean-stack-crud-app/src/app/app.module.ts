@@ -8,7 +8,7 @@ import { EmployeeCreateComponent } from './components/employee-create/employee-c
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
-//import { ApiService } from './service/api.service';
+import { ApiService } from './service/api.service';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'create-employee' },
@@ -32,7 +32,7 @@ const routes: Routes = [
     HttpClientModule,
   ],
   exports: [RouterModule],
-  //providers: [ApiService],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
