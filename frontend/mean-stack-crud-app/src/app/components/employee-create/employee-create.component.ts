@@ -2,19 +2,13 @@ import { Router } from '@angular/router';
 import { ApiService } from './../../service/api.service';
 import { Component, OnInit, NgZone } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from "@angular/forms";
+
+
 @Component({
   selector: 'app-employee-create',
   templateUrl: './employee-create.component.html',
   styleUrls: ['./employee-create.component.css']
 })
-
-interface EmployeeForm extends FormGroup {
-  controls: {
-    name: FormControl;
-    email: FormControl;
-    designation: FormControl;
-  }
-}
 
 export class EmployeeCreateComponent implements OnInit {  
   submitted = false;

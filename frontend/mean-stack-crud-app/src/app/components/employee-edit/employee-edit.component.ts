@@ -4,19 +4,13 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { ApiService } from './../../service/api.service';
 import { FormGroup, FormBuilder, Validators, FormControl } from "@angular/forms";
 
+
 @Component({
   selector: 'app-employee-edit',
   templateUrl: './employee-edit.component.html',
   styleUrls: ['./employee-edit.component.css']
 })
 
-interface EmployeeForm extends FormGroup {
-  controls: {
-    name: FormControl;
-    email: FormControl;
-    designation: FormControl;
-  }
-}
 export class EmployeeEditComponent implements OnInit {
   submitted = false;
   editForm: FormGroup;
