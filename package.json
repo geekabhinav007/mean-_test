@@ -1,0 +1,22 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "A Test Repo to Learn MEAN",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekabhinav007/mean-_test.git"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "Kumar Abhinav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geekabhinav007/mean-_test/issues"
+  },
+  "homepage": "https://github.com/geekabhinav007/mean-_test#readme"
+}
